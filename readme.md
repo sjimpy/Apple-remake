@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -Jimmy Dekker-
+**Auteur:** Jimmy Dekker
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -69,11 +69,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -Zwarte piste-
+**Je startniveau:** Zwarte piste
 
-**Je focus:** -alles!-
+**Je focus:** alles!
 
-**Je opdracht:** -https://changeofbehaviour.nl/-
+**Je opdracht:** https://changeofbehaviour.nl/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
