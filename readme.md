@@ -73,7 +73,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** alles!
 
-**Je opdracht:** https://changeofbehaviour.nl/
+**Je opdracht:** https://www.apple.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
@@ -81,4 +81,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/about.png" width="375px" alt="de about page">
+<img src="images/mac.png" width="375px" alt="de mac page">
