@@ -1,5 +1,311 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+@font-face {
+  font-family: "SFProText-Light";
+  src: url("../fonts/SFProText-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "SFProText-Regular";
+  src: url("../fonts/SFProText-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "SFProText-Medium";
+  src: url("../fonts/SFProText-Medium.woff") format("woff");
 }
 
+
+*, *::after, *::before {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+nav{
+  position: fixed;
+  width: 100vw;
+  height: 48px;
+  background: rgba(0,0,0,.8);
+  display: flex;
+  justify-content: center;
+}
+nav .mainnav{
+  position: relative;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  max-width: 980px;
+}
+nav .mainnav .desktopview{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "SFProText-Light";
+}
+nav .mainnav .desktopview a{
+  text-decoration: none;
+  color: #d6d6d6;
+  font-size: .85em;
+}
+nav .mainnav .desktopview a:hover{
+  color: #ffffff;
+}
+nav .mainnav li{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+nav .mainnav svg{
+  width: 18px;
+  height: 100%;
+  fill:#d6d6d5;
+}
+nav .mainnav svg:hover{
+  fill:#ffffff;
+}
+
+nav .burger{
+  position: relative;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+nav .burger span{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #d6d6d6;
+}
+nav .burger span{
+  top: calc(30% - 1px);
+  transition: .3s;
+}
+nav .burger span + span{
+  top: calc(70%);
+}
+nav .burger:hover span{
+  background: #ffffff;
+}
+
+nav .burger .clicked:first-of-type{
+  top: calc(50%);
+  transform: rotate(-45deg);
+}
+nav .burger .clicked:nth-child(2){
+  top: calc(50%);
+  transform: rotate(45deg);
+}
+
+
+
+nav .expand{
+  position: fixed;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 48px;
+  background: black;
+  color: white;
+  width: 100%;
+  font-family: "SFProText-Light";
+  z-index: 90;
+  transform: translateY(-100%);
+  transition: .8s;
+}
+nav .clicked{
+  transform: translateY(0%);
+}
+nav .expand ul{
+  border-top: 1px solid #424245;
+  padding: 0em 1em 1em 1em;
+  position: relative;
+  opacity: 0;
+  transition: .5s .3s;
+}
+nav .clicked ul{
+  opacity: 1;
+}
+nav .expand li{
+  padding: 0em 0em;
+  transition: .5s .3s;
+  list-style-type: none;
+}
+nav .clicked li{
+  padding: 1em 0em;
+}
+nav .expand li + li{
+  border-top: 1px solid #424245;
+}
+
+nav .expand li a{
+  color: #cccccc;
+  text-decoration: none;
+}
+nav .expand li a:visited{
+  /* color:white; */
+}
+nav .expand li a:hover{
+  color:white;
+}
+nav .expand li a:hover{
+  /* color:white; */
+}
+
+.tiny{
+  display: block;
+}
+
+section:first-of-type{
+  padding-top: 48px;
+}
+section .blacksection{
+  background: black;
+  color: #f5f5f7;
+}
+section .whitesection{
+  background: #fbfbfd;
+  color: #1d1e20;
+}
+section div{
+  text-align: center;
+}
+section div p{
+  color: #86868b;
+  font-family: "SFProText-Light";
+  padding-top: 1em;
+}
+section div h2{
+  font-family: "SFProText-Regular";
+  padding-top: 1.2em;
+  font-size: 2em;
+}
+section div h3{
+  font-family: "SFProText-Light";
+  font-size: 1.2em;
+  padding-top: .3em;
+}
+section div + div{
+  margin-top: 1em;
+}
+
+section div .buttons{
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section div .buttons a{
+  text-decoration: none;
+  font-family: "SFProText-Light";
+  font-size: 1.2em;
+  margin: .5em;
+}
+section .blacksection .buttons a{
+  color: #2997ff;
+}
+section .whitesection .buttons a{
+  color: #0066cc;
+}
+section div .buttons a:Hover{
+  text-decoration: underline;
+}
+
+section div .sectionimg{
+  /* position:; */
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section div:first-of-type .sectionimg{
+  background-image: url(../images/12pro.jpg);
+}
+section div:nth-of-type(2) .sectionimg{
+  background-image: url(../images/12.jpg);
+}
+section div:nth-of-type(3) .sectionimg{
+  background-image: url(../images/airpods.png);
+}
+section div:nth-of-type(3){
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 740px) {
+  .tiny{
+    display: none;
+  }
+  section div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  section div p{
+    font-size: 1.1em;
+  }
+  section div p + p{
+    padding-top: .2em;
+  }
+  section div h2{
+    font-family: "SFProText-Regular";
+    padding-top: 1.2em;
+    font-size: 2.8em;
+  }
+  section div h3{
+    font-family: "SFProText-Light";
+    font-size: 1.4em;
+    padding-top: .3em;
+  }
+
+
+  section div .sectionimg{
+    height: 400px;
+    width: 150%;
+    /* transform: translateX(-50%); */
+  }
+  section div:first-of-type .sectionimg{
+    background-image: url(../images/12probig.jpg);
+  }
+  section div:nth-of-type(2) .sectionimg{
+    background-image: url(../images/12big.jpg);
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  nav{
+    height: 44px;
+    padding: 0em .8em;
+  }
+  nav .mainnav svg{
+    width: 16px;
+  }
+  nav .mainnav .desktopview{
+    display: flex;
+  }
+  nav .mainnav li{
+    width: 44px;
+    height: 44px;
+  }
+  nav .mainnav li:first-child{
+    display: none;
+  }
+  section:first-of-type{
+    padding-top: 44px;
+  }
+}
