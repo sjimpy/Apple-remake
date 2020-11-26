@@ -46,23 +46,25 @@ De opzet van de eerste pagina is gemaakt, de navigatie werkt responsive en heeft
 
 Qua stijl heb ik geprobeerd om zo dicht mogelijk bij het design van Apple te blijven zonder de element stijlen te bekijken (op kleuren na). Zo koste het wat meer moeite om de fade van het menu goed te krijgen maar het is toch gelukt.
 
+**Screenshot 1:**
+
 De eerste pagina op klein scherm.
 
 <img src="progresslog/week3img1.png" width="375px" alt="homepage small">
 
-
+**Screenshot 2:**
 
 De navigatie op klein scherm, Deze heb ik al animaties gegeven. Zo animeert de hamburger naar een kruis.
 
 <img src="progresslog/week3img4.png" width="375px" alt="small nav">
 
-
+**Screenshot 3:**
 
 Dit is de eerste pagina op klein scherm. Je ziet hier dat de afbeeldingen groter zijn geworden maar de nav nogsteeds uitklapbaar is.
 
 <img src="progresslog/week3img3.png" width="375px" alt="homepage medium">
 
-
+**Screenshot 4:**
 
 Dit is de eerste pagina op grotere schermen. De navigatie is nu anders.
 
