@@ -38,21 +38,35 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Over het algemeen ging de eerste sprint van het coderen behoorlijk goed. Ik heb een klein beetje moeite gehad met de faded transparent background van de nav, maar verder ben ik nog geen problemen tegen gekomen.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+De opzet van de eerste pagina is gemaakt, de navigatie werkt responsive en heeft een breakpoint voor 2 verschillende views. Ook de rest van de pagina is responsive gemaakt en past de afbeeldingen aan als de schermbreedte groot genoeg is.
+
+Qua stijl heb ik geprobeerd om zo dicht mogelijk bij het design van Apple te blijven zonder de element stijlen te bekijken (op kleuren na). Zo koste het wat meer moeite om de fade van het menu goed te krijgen maar het is toch gelukt.
+
+De eerste pagina op klein scherm.
+<img src="progresslog/week3img1.png" width="375px" alt="homepage small">
+
+De navigatie op klein scherm, Deze heb ik al animaties gegeven. Zo animeert de hamburger naar een kruis.
+<img src="progresslog/week3img4.png" width="375px" alt="small nav">
+
+Dit is de eerste pagina op klein scherm. Je ziet hier dat de afbeeldingen groter zijn geworden maar de nav nogsteeds uitklapbaar is.
+<img src="progresslog/week3img3.png" width="375px" alt="homepage medium">
+
+Dit is de eerste pagina op grotere schermen. De navigatie is nu anders.
+<img src="progresslog/week3img2.png" width="375px" alt="homepage bigg">
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Samen met het groepje opgesteld
 
-| student 1      | student 2          | student 3    | student 4        |
+| Luke      | Melvin          | Sam    | Jimmy        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| margin 0 werkt niet  | nvt.  | Tips over de nav    | viewport animaties  |
+| elementen na relative en absolute |   | fonts van andere website toevoeten |   |
+| font via telefoon anders dan desktop |    |      |    |
 
 ### Verslag van meeting
 
@@ -68,7 +82,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** Zwarte piste
+**Je startniveau:** Blauwe piste
 
 **Je focus:** alles!
 
@@ -76,8 +90,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/apple.png" width="375px" alt="de homepage">
+<img src="progresslog/apple.png" width="375px" alt="de homepage">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/mac.png" width="375px" alt="de mac page">
+<img src="progresslog/mac.png" width="375px" alt="de mac page">
