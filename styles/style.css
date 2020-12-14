@@ -72,6 +72,9 @@ nav .mainnav li{
   justify-content: center;
   z-index: 1;
 }
+nav .mainnav li:last-child{
+  padding-right: 1.5em;
+}
 
 nav .mainnav svg{
   width: 18px;
@@ -120,6 +123,7 @@ nav .expand{
   position: fixed;
   margin: 0;
   top: 0;
+  left: 0;
   bottom: 0;
   padding-top: 48px;
   background: black;
@@ -173,63 +177,63 @@ nav .expand li a:hover{
   display: block;
 }
 
-section:first-of-type{
+main{
   padding-top: 48px;
 }
-section .blacksection{
+main .blacksection{
   background: black;
   color: #f5f5f7;
 }
-section .whitesection{
+main .whitesection{
   background: #fbfbfd;
   color: #1d1e20;
 }
-section div{
+main section{
   text-align: center;
   overflow-x: hidden;
 }
-section div p{
+main section:not(:first-child){
+  margin-top: 1em
+}
+main section p{
   color: #86868b;
   font-family: "SFProText-Light";
   padding-top: 1em;
 }
-section div h2{
+main section h2{
   font-family: "SFProText-Regular";
   padding-top: 1.2em;
   font-size: 2em;
 }
-section div h3{
+main section h3{
   font-family: "SFProText-Light";
   font-size: 1.2em;
   padding-top: .3em;
 }
-section div + div{
-  margin-top: 1em;
-}
 
-section div .buttons{
+main section .buttons{
   padding-top: 1em;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-section div .buttons a{
+main section .buttons a{
   text-decoration: none;
   font-family: "SFProText-Light";
   font-size: 1.2em;
   margin: .5em;
 }
-section .blacksection .buttons a{
+main .blacksection .buttons a{
   color: #2997ff;
 }
-section .whitesection .buttons a{
+main .whitesection .buttons a{
   color: #0066cc;
 }
-section div .buttons a:Hover{
+main section .buttons a:Hover{
   text-decoration: underline;
 }
 
-section div .sectionimg{
+main section .sectionimg{
   /* position:; */
   width: 100%;
   height: 250px;
@@ -237,21 +241,95 @@ section div .sectionimg{
   background-position: center center;
   background-repeat: no-repeat;
 }
-section div:first-of-type .sectionimg{
+main section:first-of-type .sectionimg{
   background-image: url(../images/12pro.jpg);
 }
-section div:nth-of-type(2) .sectionimg{
+main section:nth-of-type(2) .sectionimg{
   background-image: url(../images/12.jpg);
 }
-section div:nth-of-type(3) .sectionimg{
+main section:nth-of-type(3) .sectionimg{
   background-image: url(../images/airpods.png);
 }
-section div:nth-of-type(3){
+main section:nth-of-type(3){
   padding-bottom: 1em;
 }
 
 
 
+
+footer{
+  background:#f5f5f7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+footer a{
+  color: #515154;
+  text-decoration: none;
+  font-family: "SFProText-Light";
+  transition: .3s
+}
+footer a:hover{
+  color: black;
+  text-decoration: underline;
+}
+footer section{
+  width: calc(100% - 2em);
+  max-width: 1000px;
+  border-bottom: 1px solid #d2d2d7;
+  font-size: .8em;
+  padding: 2em 0 1em 0;
+}
+footer section p{
+  color:#86868b;
+  font-family: "SFProText-Light";
+}
+footer section ul{
+  list-style-type: none;
+}
+footer section ul li{
+  padding-bottom: 1em;
+}
+footer section:nth-of-type(2) p:last-of-type{
+  padding-top: 3em;
+}
+footer section:nth-of-type(2) p:last-of-type a{
+  color: #06c;
+}
+footer section:nth-of-type(2) p:last-of-type a:hover{
+  color: #06c;
+  text-decoration: underline;
+}
+footer section:nth-of-type(2) div{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+footer section:nth-of-type(2) div .footersectionrows{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer section:nth-of-type(2) h3{
+  font-size: 1em;
+  color: black;
+  font-family: "SFProText-Medium";
+  padding-bottom: 1em;
+}
+footer section:nth-of-type(2) h3:not(:first-child){
+  padding-top: 1em;
+}
+footer section:last-of-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer section:last-of-type div{
+  display: flex;
+  flex-direction: row;
+}
 
 
 
@@ -259,47 +337,48 @@ section div:nth-of-type(3){
   .tiny{
     display: none;
   }
-  section div{
+  main section{
     display: flex;
     flex-direction: column;
     align-items:center;
   }
-  section div p{
+  main section p{
     font-size: 1.1em;
   }
-  section div p + p{
+  main section p + p{
     padding-top: .2em;
   }
-  section div h2{
+  main section h2{
     font-family: "SFProText-Regular";
     padding-top: 1.2em;
     font-size: 2.8em;
   }
-  section div h3{
+  main section h3{
     font-family: "SFProText-Light";
     font-size: 1.4em;
     padding-top: .3em;
   }
 
 
-  section div .sectionimg{
+  main section .sectionimg{
     height: 400px;
     width: 150%;
     /* transform: translateX(-50%); */
   }
-  section div:first-of-type .sectionimg{
+  main section:first-of-type .sectionimg{
     background-image: url(../images/12probig.jpg);
   }
-  section div:nth-of-type(2) .sectionimg{
+  main section:nth-of-type(2) .sectionimg{
     background-image: url(../images/12big.jpg);
   }
 }
 
 
+
 @media only screen and (min-width: 768px) {
   nav{
     height: 44px;
-    padding: 0em .8em;
+    padding: 0em 0em;
   }
   nav .mainnav svg{
     width: 16px;
@@ -314,7 +393,33 @@ section div:nth-of-type(3){
   nav .mainnav li:first-child{
     display: none;
   }
-  section:first-of-type{
+  main{
     padding-top: 44px;
   }
+}
+
+
+@media only screen and (max-width: 780px) {
+  footer section:nth-of-type(2) div{
+    flex-direction: column;
+  }
+  footer section:nth-of-type(2) div .footersectionrows {
+    width: 100%;
+  }
+  footer section:nth-of-type(2) h3{
+    font-size: .95em;
+    color: black;
+    font-family: "SFProText-light";
+    padding: .7em 0 .7em 0 !important;
+    border-bottom: 1px solid #d2d2d7;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer section:nth-of-type(2) div ul{
+    display: none;
+  }
+
 }
