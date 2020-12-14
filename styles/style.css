@@ -263,6 +263,8 @@ footer{
   align-items: center;
   flex-direction: column;
   text-align: left;
+  margin-top: 1em;
+  font-size: .93em;
 }
 footer a{
   color: #515154;
@@ -280,6 +282,9 @@ footer section{
   border-bottom: 1px solid #d2d2d7;
   font-size: .8em;
   padding: 2em 0 1em 0;
+}
+footer section:last-child{
+  padding: 1em 0 2em 0;
 }
 footer section p{
   color:#86868b;
@@ -317,6 +322,9 @@ footer section:nth-of-type(2) h3{
   color: black;
   font-family: "SFProText-Medium";
   padding-bottom: 1em;
+}
+footer section:nth-of-type(2) h3 span{
+  display: none;
 }
 footer section:nth-of-type(2) h3:not(:first-child){
   padding-top: 1em;
@@ -409,17 +417,25 @@ footer section:last-of-type div{
   footer section:nth-of-type(2) h3{
     font-size: .95em;
     color: black;
-    font-family: "SFProText-light";
+    font-family: "SFProText-medium";
     padding: .7em 0 .7em 0 !important;
-    border-bottom: 1px solid #d2d2d7;
+    border-top: 1px solid #d2d2d7;
     width: 100%;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+  footer section:nth-of-type(2) .first{
+    border-top: none;
+  }
+  footer section:nth-of-type(2) h3 span{
+    transition: .3s;
+    display: block;
+  }
   footer section:nth-of-type(2) div ul{
     display: none;
+    padding: 1em 0 1em 1em;
   }
 
 }

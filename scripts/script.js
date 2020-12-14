@@ -21,7 +21,9 @@ console.log(footerh3);
 
 for (var i = 0; i < footerh3.length; i++) {
   footerh3[i].addEventListener("click", function() {
-    this.querySelector("span").toggle
+    console.log(this.nextSibling.nextSibling);
+    this.nextSibling.nextSibling.style.display = "block"
+    // this.querySelector("span").toggle
     console.log(this.querySelector("span"));
   })
 }
