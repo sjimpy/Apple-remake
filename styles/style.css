@@ -1,4 +1,12 @@
-/* CSS Document */
+/* ---------------------------------------------------------------hier maak ik een aantal css variable voor de kleuren */
+:root {
+  --lightgray: #d6d6d6; /* nav text kleur en lijnen in main*/
+  --wit: #fff; /* nav text kleur en lijnen in main*/
+}
+
+
+
+/* ---------------------------------------------------------------hier worden de fonts ingeladen */
 @font-face {
   font-family: "SFProText-Light";
   src: url("../fonts/SFProText-Light.woff") format("woff");
@@ -13,11 +21,28 @@
 }
 
 
+
+/* ---------------------------------------------------------------hier doe ik wat vaste pagina stijl */
 *, *::after, *::before {
   box-sizing:border-box;
   margin: 0;
   padding: 0;
 }
+.tiny{
+  display: block;
+}
+body{
+  background-color: var(--wit);
+}
+*:focus{
+  outline-offset: 5px;
+  outline: 4px solid #2997ff;
+  animation: blink 1s linear infinite;
+}
+
+
+
+/* ---------------------------------------------------------------hier begint de stijl voor de nav */
 nav{
   position: fixed;
   width: 100vw;
@@ -32,16 +57,13 @@ nav .bg{
   width: 100%;
   height: 100%;
   backdrop-filter: saturate(150%) blur(25px);
-
 }
-
 nav .mainnav{
   position: relative;
   height: 100%;
   z-index: 100;
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,11 +80,11 @@ nav .mainnav .desktopview{
 }
 nav .mainnav .desktopview a{
   text-decoration: none;
-  color: #d6d6d6;
+  color: var(--lightgray);
   font-size: .85em;
 }
 nav .mainnav .desktopview a:hover{
-  color: #ffffff;
+  color: var(--wit);
 }
 nav .mainnav li{
   width: 48px;
@@ -76,16 +98,14 @@ nav .mainnav li{
 nav .mainnav li:last-child{
   padding-right: 1.5em;
 }
-
 nav .mainnav svg{
   width: 18px;
   height: 100%;
-  fill:#d6d6d5;
+  fill:var(--lightgray);
 }
 nav .mainnav svg:hover{
-  fill:#ffffff;
+  fill:var(--wit);
 }
-
 nav .burger{
   position: relative;
   width: 17px;
@@ -96,7 +116,7 @@ nav .burger span{
   position: absolute;
   width: 100%;
   height: 1px;
-  background: #d6d6d6;
+  background: var(--lightgray);
 }
 nav .burger span{
   top: calc(30% - 1px);
@@ -106,9 +126,8 @@ nav .burger span + span{
   top: calc(70%);
 }
 nav .burger:hover span{
-  background: #ffffff;
+  background: var(--wit);
 }
-
 nav .burger .clicked:first-of-type{
   top: calc(50%);
   transform: rotate(-45deg);
@@ -117,9 +136,6 @@ nav .burger .clicked:nth-child(2){
   top: calc(50%);
   transform: rotate(45deg);
 }
-
-
-
 nav .expand{
   position: fixed;
   margin: 0;
@@ -128,7 +144,7 @@ nav .expand{
   bottom: 0;
   padding-top: 48px;
   background: black;
-  color: white;
+  color: var(--wit);
   width: 100%;
   font-family: "SFProText-Light";
   z-index: 90;
@@ -160,25 +176,17 @@ nav .clicked li{
 nav .expand li + li{
   border-top: 1px solid #424245;
 }
-
 nav .expand li a{
   color: #cccccc;
   text-decoration: none;
 }
-nav .expand li a:visited{
-  /* color:white; */
-}
 nav .expand li a:hover{
-  color:white;
-}
-nav .expand li a:hover{
-  /* color:white; */
+  color:var(--wit);
 }
 
-.tiny{
-  display: block;
-}
 
+
+/* ---------------------------------------------------------------algemene main code*/
 main{
   padding-top: 48px;
 }
@@ -186,7 +194,7 @@ main .blacksection{
   background: black;
   color: #f5f5f7;
 }
-main .whitesection{
+main .var(--wit)section{
   background: #fbfbfd;
   color: #1d1e20;
 }
@@ -212,7 +220,6 @@ main section h3{
   font-size: 1.2em;
   padding-top: .3em;
 }
-
 main section .buttons{
   padding-top: 1em;
   display: flex;
@@ -228,15 +235,13 @@ main section .buttons a{
 main .blacksection .buttons a{
   color: #2997ff;
 }
-main .whitesection .buttons a{
+main .var(--wit)section .buttons a{
   color: #0066cc;
 }
 main section .buttons a:Hover{
   text-decoration: underline;
 }
-
 main section .sectionimg{
-  /* position:; */
   width: 100%;
   height: 250px;
   background-size: contain;
@@ -253,7 +258,6 @@ main section:nth-of-type(2) .sectionimg{
 main section:nth-of-type(3){
   padding-bottom: 1em;
 }
-
 main section:nth-of-type(3) .sectionimgcontainer{
   display:flex;
   flex-direction: column;
@@ -276,9 +280,9 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 
 
 
-
+/* ---------------------------------------------------------------custom css voor de mac pagina*/
 #mac section:first-of-type{
-  background-color: white;
+  background-color: var(--wit);
   font-family: "SFProText-light";
 }
 #mac section{
@@ -312,7 +316,7 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
   left: 0;
   width: 100%;
   height: 70%;
-  border-right: 1px solid #d6d6d6;
+  border-right: 1px solid var(--lightgray);
   pointer-events: none;
 }
 #mac .option img{
@@ -331,7 +335,7 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
   border-radius: 999px;
   margin: 0em 1em 1em 0em;
   box-shadow: inset 0 1px 4px rgba(0,0,0,.8);
-  border:3px solid white;
+  border:3px solid var(--wit);
   position: relative;
 }
 #mac .colors .color::before{
@@ -360,7 +364,7 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 }
 #mac .colors .color p{
   font-size: .7em;
-  white-space: nowrap;
+  var(--wit)-space: nowrap;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -374,7 +378,6 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 #mac .option ul{
   list-style-type: none;
 }
-
 #mac .option p:nth-last-of-type(3){
   color: #ef5602;
   text-transform: uppercase;
@@ -393,7 +396,7 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 #mac .option a:last-of-type{
   margin-top: 1em;
   display: inline-block;
-  color: white;
+  color: var(--wit);
   background-color: #0070c9;
   background: linear-gradient(rgba(66, 161, 236, 1),rgba(0, 112, 201, 1));
   border: 1px solid #07c;
@@ -405,22 +408,18 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
   text-decoration: none;
   background: linear-gradient(rgba(0, 112, 201, 1),rgba(0, 112, 201, 1));
 }
-
-
 #mac section:nth-of-type(2) img{
   margin: 2em 0 3em 0;
   width: 90%;
   max-width: 900px;
 }
-
-
 #mac section:nth-of-type(3) img{
   margin: 2em 0 0em 0;
   width: 35%;
   max-width: 200px;
 }
 #mac section:nth-of-type(3){
-  background-color: white;
+  background-color: var(--wit);
 }
 #mac section:nth-of-type(3) p{
   max-width: 1000px
@@ -429,10 +428,7 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 
 
 
-
-
-
-
+/* ---------------------------------------------------------------hier begint de code voor de footer*/
 footer{
   background:#f5f5f7;
   display: flex;
@@ -523,6 +519,41 @@ footer section:last-of-type div{
 
 
 
+
+/* ---------------------------------------------------------------een beetje code voor de easteregg*/
+.easteregg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+.jobs{
+  position: absolute;
+  left: 0%;
+  height: 90%;
+  bottom: 0;
+  transform: translateX(-100%);
+}
+.laser{
+  position: absolute;
+  height: 1vh;
+  width: 1px;
+  background-color: red;
+  left: 24.5vh;
+  top: 44.8%;
+  opacity: .9;
+  opacity: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 4px 3px red;
+}
+
+
+
+
+/* ---------------------------------------------------------------hier beginnen de mediaqueries*/
 @media only screen and (min-width: 740px) {
   .tiny{
     display: none;
@@ -548,8 +579,6 @@ footer section:last-of-type div{
     font-size: 1.4em;
     padding-top: .3em;
   }
-
-
   main section .sectionimg{
     height: 400px;
     width: 150%;
@@ -562,10 +591,9 @@ footer section:last-of-type div{
     background-image: url(../images/12big.jpg);
   }
   main section:nth-of-type(3) .sectionimg{
-  width: 400px;
+    width: 400px;
   }
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -594,6 +622,7 @@ footer section:last-of-type div{
   }
 }
 
+
 @media only screen and (min-width: 780px) {
   main section:nth-of-type(3) .sectionimgcontainer{
     flex-direction: row;
@@ -607,6 +636,7 @@ footer section:last-of-type div{
     width: calc(100vw / 3.5);
   }
 }
+
 
 @media only screen and (max-width: 780px) {
   footer section:nth-of-type(2) div{
@@ -651,14 +681,31 @@ footer section:last-of-type div{
     max-width: 400px;
   }
   #mac .option:first-of-type{
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid var(--lightgray);
   }
   #mac .option:first-of-type::after{
-    border-right: 0px solid #d6d6d6;
+    border-right: 0px solid var(--lightgray);
   }
 }
 
 
+
+
+/* ---------------------------------------------------------------hier staan de animaties*/
+@keyframes blink {
+  0% {
+    outline-offset: 5px;
+    outline: 4px solid #2997ff;
+  }
+  50% {
+    outline-offset: 0px;
+    outline: 0px solid #2997ff;
+  }
+  100% {
+    outline-offset: 5px;
+    outline: 4px solid #2997ff;
+  }
+}
 
 @keyframes rotatingplus {
   from {
@@ -668,6 +715,7 @@ footer section:last-of-type div{
     transform: rotate(360deg);
   }
 }
+
 @keyframes rotatingmin {
   from {
     transform: rotate(0deg);
@@ -675,44 +723,6 @@ footer section:last-of-type div{
   to {
     transform: rotate(-360deg);
   }
-}
-
-
-
-
-
-
-.easteregg{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  pointer-events: none;
-}
-.jobs{
-  position: absolute;
-  left: 0%;
-  height: 90%;
-  bottom: 0;
-  transform: translateX(-100%);
-  /* animation: showjobs 1s forwards; */
-}
-
-.laser{
-  position: absolute;
-  height: 1vh;
-  width: 1px;
-  background-color: red;
-  left: 24.5vh;
-  top: 44.8%;
-  opacity: .9;
-  opacity: 0;
-  border-radius: 30px;
-  box-shadow: 0 0 4px 3px red;
-
-  /* animation: laser 2s linear; */
 }
 
 @keyframes showjobs {
@@ -723,6 +733,7 @@ footer section:last-of-type div{
     transform: translateX(-55%);
   }
 }
+
 @keyframes hidejobs {
   from {
     transform: translateX(-55%);
@@ -747,20 +758,4 @@ footer section:last-of-type div{
   100% {
     transform: translateX(5000px);
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 780px) {
-
 }
