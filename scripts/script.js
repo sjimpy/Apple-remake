@@ -27,3 +27,32 @@ for (var i = 0; i < footerh3.length; i++) {
     this.classList.toggle("active");
   })
 }
+
+
+
+
+
+var ingetypt = "";
+var resetingetyptchecker;
+
+document.addEventListener('keydown', function (event) {
+  ingetypt = ingetypt += event.key;
+  clearTimeout(resetingetyptchecker)
+  resetingetyptchecker = setTimeout(resetingetypt, 1000);
+
+  if (ingetypt == "windows") {
+    console.log("easteregg activated");
+    document.querySelectorAll(".jobs")[0].style.animation = "showjobs 1s forwards";
+    setTimeout(function () {
+      document.querySelector(".laser").style.animation = "laser 1s 4 linear";
+    }, 1000);
+    setTimeout(function () {
+      document.querySelectorAll(".jobs")[0].style.animation = "hidejobs 1s forwards";
+            document.querySelector(".laser").style.animation = "none";
+    }, 5000);
+  }
+});
+
+function resetingetypt() {
+  ingetypt = "";
+}
