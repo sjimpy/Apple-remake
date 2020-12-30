@@ -240,6 +240,7 @@ main section .sectionimg{
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-top: 1em;
 }
 main section:first-of-type .sectionimg{
   background-image: url(../images/12pro.jpg);
@@ -247,11 +248,22 @@ main section:first-of-type .sectionimg{
 main section:nth-of-type(2) .sectionimg{
   background-image: url(../images/12.jpg);
 }
-main section:nth-of-type(3) .sectionimg{
-  background-image: url(../images/airpods.png);
-}
 main section:nth-of-type(3){
   padding-bottom: 1em;
+}
+
+main section:nth-of-type(3) .sectionimgcontainer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 2em);
+  left: 50%;
+  margin-left: 1em;
+}
+main section:nth-of-type(3) .sectionimgcontainer img{
+  width: calc(100% - 2em);
+  margin-top: 2em;
+  max-width: 300px;
 }
 
 
@@ -317,6 +329,12 @@ footer section:nth-of-type(2) div .footersectionrows{
   justify-content: flex-start;
   align-items: flex-start;
 }
+footer section:nth-of-type(2) div .footersectionrows h3 span{
+  transition: .3s;
+}
+footer section:nth-of-type(2) div .footersectionrows .active span{
+  transform: rotate(45deg);
+}
 footer section:nth-of-type(2) h3{
   font-size: 1em;
   color: black;
@@ -371,13 +389,16 @@ footer section:last-of-type div{
   main section .sectionimg{
     height: 400px;
     width: 150%;
-    /* transform: translateX(-50%); */
+
   }
   main section:first-of-type .sectionimg{
     background-image: url(../images/12probig.jpg);
   }
   main section:nth-of-type(2) .sectionimg{
     background-image: url(../images/12big.jpg);
+  }
+  main section:nth-of-type(3) .sectionimg{
+  width: 400px;
   }
 }
 
@@ -405,6 +426,22 @@ footer section:last-of-type div{
     padding-top: 44px;
   }
 }
+
+@media only screen and (min-width: 780px) {
+  main section:nth-of-type(3) .sectionimgcontainer{
+    flex-direction: row;
+    justify-content:center;
+    width: calc(100% - 2em);
+    margin-left: 0em;
+  }
+  main section:nth-of-type(3) .sectionimgcontainer img{
+    width: calc(100% - 2em);
+    margin: 1em 1em;
+    width: calc(100vw / 3.5);
+  }
+}
+
+
 
 
 @media only screen and (max-width: 780px) {
@@ -437,5 +474,4 @@ footer section:last-of-type div{
     display: none;
     padding: 1em 0 1em 1em;
   }
-
 }
