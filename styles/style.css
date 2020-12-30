@@ -569,3 +569,135 @@ footer section:last-of-type div{
     transform: translateX(5000px);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#mac section:first-of-type{
+  background-color: white;
+  font-family: "SFProText-light";
+}
+#mac section a{
+  color: #0066cc;
+  text-decoration: none;
+}
+#mac section a:hover{
+  text-decoration: underline;
+}
+#mac section:first-of-type h2:first-of-type{
+  margin-bottom: 1em;
+}
+#mac .macchoices{
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+}
+#mac .option{
+  width: 50%;
+  padding: 3em;
+}
+#mac .option img{
+  width: 100%;
+}
+#mac .colors{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#mac .colors .color{
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  margin: 0em 1em 1em 0em;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,.8);
+  border:3px solid white;
+  position: relative;
+}
+#mac .colors .color::before{
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 99px;
+  border: 1px solid rgba(0,0,0,0);
+  transition: .3s
+}
+#mac .colors .color:hover::before{
+  border: 1px solid rgba(0,0,0,.4);
+}
+#mac .colors .color:first-of-type{
+  background-color: #b3b7b9;
+}
+#mac .colors .color:nth-of-type(2){
+  background-color: #efdfd2;
+}
+#mac .colors .color:nth-of-type(3){
+  background-color: #dfe2e1;
+}
+#mac .colors .color p{
+  font-size: .7em;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + .1em);
+  opacity: 0;
+  transition: .3s;
+}
+#mac .colors .color:hover p{
+  opacity: 1;
+}
+#mac .option ul{
+  list-style-type: none;
+}
+
+#mac .option p:nth-last-of-type(3){
+  color: #ef5602;
+  text-transform: uppercase;
+}
+#mac .option h3:first-of-type{
+  margin: .2em 0 .2em 0;
+}
+#mac .option h3{
+  margin: 1em 0 .2em 0;
+  font-family: "SFProText-Regular";
+}
+#mac .option li{
+  margin: 1em 0 .2em 0;
+  font-family: "SFProText-light";
+}
+#mac .option a:last-of-type{
+  margin-top: 1em;
+  display: inline-block;
+  color: white;
+  background-color: #0070c9;
+  background: linear-gradient(rgba(66, 161, 236, 1),rgba(0, 112, 201, 1));
+  border: 1px solid #07c;
+  padding: .5em 3em;
+  border-radius: 4px;
+  transition: .3s;
+}
+#mac .option a:last-of-type:hover{
+  text-decoration: none;
+  background: linear-gradient(rgba(0, 112, 201, 1),rgba(0, 112, 201, 1));
+}
+
+
+#mac section:nth-of-type(2) img{
+  margin: 2em 0 3em 0;
+  width: 90%;
+  max-width: 900px;
+}
