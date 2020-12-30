@@ -41,7 +41,6 @@ document.addEventListener('keydown', function (event) {
   resetingetyptchecker = setTimeout(resetingetypt, 1000);
 
   if (ingetypt == "windows") {
-    console.log("easteregg activated");
     document.querySelectorAll(".jobs")[0].style.animation = "showjobs 1s forwards";
     setTimeout(function () {
       document.querySelector(".laser").style.animation = "laser 1s 4 linear";
@@ -55,4 +54,30 @@ document.addEventListener('keydown', function (event) {
 
 function resetingetypt() {
   ingetypt = "";
+}
+
+
+
+var color = document.getElementsByClassName('color');
+var changingimg;
+
+for (var i = 0; i < color.length; i++) {
+  color[i].addEventListener("click", function() {
+    if (this.classList.contains("v2")) {
+      changingimg = document.getElementsByClassName("changingmac")[1];
+    }
+    else {
+      changingimg = document.getElementsByClassName("changingmac")[0];
+    }
+
+    if (this.classList.contains("color1")) {
+      changingimg.src = "../images/macgray.jpg";
+    }
+    else if (this.classList.contains("color2")) {
+      changingimg.src = "../images/macgold.jpg";
+    }
+    else {
+      changingimg.src = "../images/macsilver.jpg";
+    }
+  })
 }
