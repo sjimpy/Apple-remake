@@ -313,6 +313,7 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
   width: 100%;
   height: 70%;
   border-right: 1px solid #d6d6d6;
+  pointer-events: none;
 }
 #mac .option img{
   width: 100%;
