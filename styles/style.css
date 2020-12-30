@@ -510,6 +510,7 @@ footer section:last-of-type div{
   left: 0;
   top: 0;
   z-index: 1000;
+  pointer-events: none;
 }
 .jobs{
   position: absolute;
