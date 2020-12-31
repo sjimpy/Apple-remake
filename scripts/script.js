@@ -48,3 +48,36 @@ document.addEventListener('keydown', function (event) {
 function resetingetypt() {
   ingetypt = "";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+var animate = document.getElementsByClassName('animate');
+
+elementInViewportChecker();
+window.addEventListener("scroll", elementInViewportChecker);
+
+function elementInViewportChecker() {
+  for (var i = 0; i < animate.length; i++) {
+    if (isInViewport(animate[i]) ? true : false) {
+      animate[i].style.opacity = "1";
+      animate[i].style.transform = "translateY(0)";
+    }
+  }
+}
+
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.top.innerHeight/1.3 || document.documentElement.clientHeight/1.9) &&
+        rect.top >= -10
+    );
+}
