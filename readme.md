@@ -30,7 +30,56 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Over het algemeen ging de eerste sprint van het coderen behoorlijk goed. Ik heb een klein beetje moeite gehad met de faded transparent background van de nav, maar verder ben ik nog geen problemen tegen gekomen.
+
+**Screenshot(s):**
+
+De opzet van de eerste pagina is gemaakt, de navigatie werkt responsive en heeft een breakpoint voor 2 verschillende views. Ook de rest van de pagina is responsive gemaakt en past de afbeeldingen aan als de schermbreedte groot genoeg is.
+
+Qua stijl heb ik geprobeerd om zo dicht mogelijk bij het design van Apple te blijven zonder de element stijlen te bekijken (op kleuren na). Zo koste het wat meer moeite om de fade van het menu goed te krijgen maar het is toch gelukt.
+
+**Screenshot 1:**
+
+De eerste pagina op klein scherm.
+
+<!-- <img src="progresslog/week3img1.png" width="375px" alt="homepage small"> -->
+
+**Screenshot 2:**
+
+De navigatie op klein scherm, Deze heb ik al animaties gegeven. Zo animeert de hamburger naar een kruis.
+
+<!-- <img src="progresslog/week3img4.png" width="375px" alt="small nav"> -->
+
+**Screenshot 3:**
+
+Dit is de eerste pagina op klein scherm. Je ziet hier dat de afbeeldingen groter zijn geworden maar de nav nogsteeds uitklapbaar is.
+
+<!-- <img src="progresslog/week3img3.png" width="375px" alt="homepage medium"> -->
+
+**Screenshot 4:**
+
+Dit is de eerste pagina op grotere schermen. De navigatie is nu anders.
+
+<!-- <img src="progresslog/week3img2.png" width="375px" alt="homepage bigg"> -->
+
+### Agenda voor meeting
+
+Samen met het groepje opgesteld
+
+| Luke      | Melvin          | Sam    | Jimmy        |
+| ---            | ---                | ---          | ---              |
+| Bij svg: Waarom is ‘stroke’ geen css eigenschap?  | nvt.  | Font die gedownload is gebruiken.    | vDe Apple website heeft vaak updates, hoe kan ik dat het beste aanpakken ?  |
+| Bij het drukken op een button herlaad alles ipv de js-actie te ondernemen.  |   | Hoe kan ik dit menu uit laten klappen als ik erop klik? |   |
+| Hoe klap ik een ‘uitklapmenu’ uit in animatie? |    |   Moet je al een grid gebruiken op een small screen of alleen als er een breakpoint komt?   |    |
+| Form heeft geen action. Maar weet niet wat ik moet invullen. |    |   Wat betekent de :after en de :before precies? (weet het zelf wel ongeveer)   |    |
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
+
+
 
 
 
