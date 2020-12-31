@@ -11,6 +11,7 @@ burgerBTN.addEventListener("click", function() {
 
 
 
+
 // met dit stuk code maak ik de ingeklapte elementen zichtbaar.
 var footerh3 = document.querySelector("footer").querySelectorAll("h3");
 for (var i = 0; i < footerh3.length; i++) {
@@ -23,6 +24,7 @@ for (var i = 0; i < footerh3.length; i++) {
     this.classList.toggle("active");
   })
 }
+
 
 
 
@@ -45,6 +47,7 @@ document.addEventListener('keydown', function (event) {
     }, 5000);
   }
 });
+
 function resetingetypt() {
   ingetypt = "";
 }
@@ -52,19 +55,11 @@ function resetingetypt() {
 
 
 
-
-
-
-
-
-
-
-
+// dit stukje code laat alle elementen met de classname "animate" verschijnen als ze ver genoeg in beeld zijn.
 var animate = document.getElementsByClassName('animate');
-
-elementInViewportChecker();
 window.addEventListener("scroll", elementInViewportChecker);
 
+elementInViewportChecker();
 function elementInViewportChecker() {
   for (var i = 0; i < animate.length; i++) {
     if (isInViewport(animate[i]) ? true : false) {

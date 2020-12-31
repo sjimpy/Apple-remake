@@ -47,6 +47,14 @@ section .animate{
   transform: translateY(50px);
   transition: .7s;
 }
+a{
+  color: #06c;
+}
+a:hover{
+  color: #06c;
+  text-decoration: underline;
+}
+
 
 
 /* ---------------------------------------------------------------hier begint de stijl voor de nav */
@@ -83,7 +91,7 @@ nav .mainnav .desktopview{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
 }
 nav .mainnav .desktopview a{
   text-decoration: none;
@@ -153,7 +161,7 @@ nav .expand{
   background: black;
   color: var(--wit);
   width: 100%;
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
   z-index: 90;
   transform: translateY(-100%);
   transition: .8s;
@@ -201,7 +209,7 @@ main .blacksection{
   background: black;
   color: #f5f5f7;
 }
-main .var(--wit)section{
+main .whitesection{
   background: #fbfbfd;
   color: #1d1e20;
 }
@@ -214,16 +222,16 @@ main section:not(:first-child){
 }
 main section p{
   color: #86868b;
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
   padding-top: 1em;
 }
 main section h2{
-  font-family: "SFProText-Regular";
+  font-family: "SFProText-Regular", Arial;
   padding-top: 1.2em;
   font-size: 2em;
 }
 main section h3{
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
   font-size: 1.2em;
   padding-top: .3em;
 }
@@ -235,14 +243,14 @@ main section .buttons{
 }
 main section .buttons a{
   text-decoration: none;
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
   font-size: 1.2em;
   margin: .5em;
 }
 main .blacksection .buttons a{
   color: #2997ff;
 }
-main .var(--wit)section .buttons a{
+main .whtiesection .buttons a{
   color: #0066cc;
 }
 main section .buttons a:Hover{
@@ -286,11 +294,10 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 
 
 
-
 /* ---------------------------------------------------------------custom css voor de mac pagina*/
 #mac section:first-of-type{
   background-color: var(--wit);
-  font-family: "SFProText-light";
+  font-family: "SFProText-light", Arial;
 }
 #mac section{
   padding: 1em;
@@ -394,11 +401,11 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 }
 #mac .option h3{
   margin: 1em 0 .2em 0;
-  font-family: "SFProText-Regular";
+  font-family: "SFProText-Regular", Arial;
 }
 #mac .option li{
   margin: 1em 0 .2em 0;
-  font-family: "SFProText-light";
+  font-family: "SFProText-light", Arial;
 }
 #mac .option a:last-of-type{
   margin-top: 1em;
@@ -437,7 +444,6 @@ main section:nth-of-type(3) .sectionimgcontainer img:nth-of-type(2){
 
 
 
-
 /* ---------------------------------------------------------------hier begint de code voor de footer*/
 footer{
   background:#f5f5f7;
@@ -449,9 +455,8 @@ footer{
   font-size: .93em;
 }
 footer a{
-  color: #515154;
   text-decoration: none;
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
   transition: .3s
 }
 footer a:hover{
@@ -465,12 +470,15 @@ footer section{
   font-size: .8em;
   padding: 2em 0 1em 0;
 }
+footer section:nth-of-type(2) .footersectionrows a{
+  color: #515154;
+}
 footer section:last-child{
   padding: 1em 0 2em 0;
 }
 footer section p{
   color:#86868b;
-  font-family: "SFProText-Light";
+  font-family: "SFProText-Light", Arial;
 }
 footer section ul{
   list-style-type: none;
@@ -480,13 +488,6 @@ footer section ul li{
 }
 footer section:nth-of-type(2) p:last-of-type{
   padding-top: 3em;
-}
-footer section:nth-of-type(2) p:last-of-type a{
-  color: #06c;
-}
-footer section:nth-of-type(2) p:last-of-type a:hover{
-  color: #06c;
-  text-decoration: underline;
 }
 footer section:nth-of-type(2) div{
   display: flex;
@@ -508,7 +509,7 @@ footer section:nth-of-type(2) div .footersectionrows .active span{
 footer section:nth-of-type(2) h3{
   font-size: 1em;
   color: black;
-  font-family: "SFProText-Medium";
+  font-family: "SFProText-Medium", Arial;
   padding-bottom: 1em;
 }
 footer section:nth-of-type(2) h3 span{
@@ -526,7 +527,6 @@ footer section:last-of-type div{
   display: flex;
   flex-direction: row;
 }
-
 
 
 
@@ -562,7 +562,6 @@ footer section:last-of-type div{
 
 
 
-
 /* ---------------------------------------------------------------hier beginnen de mediaqueries*/
 @media only screen and (min-width: 740px) {
   .tiny{
@@ -580,12 +579,12 @@ footer section:last-of-type div{
     padding-top: .2em;
   }
   main section h2{
-    font-family: "SFProText-Regular";
+    font-family: "SFProText-Regular", Arial;
     padding-top: 1.2em;
     font-size: 2.8em;
   }
   main section h3{
-    font-family: "SFProText-Light";
+    font-family: "SFProText-Light", Arial;
     font-size: 1.4em;
     padding-top: .3em;
   }
@@ -604,6 +603,7 @@ footer section:last-of-type div{
     width: 400px;
   }
 }
+
 
 
 @media only screen and (min-width: 768px) {
@@ -633,6 +633,7 @@ footer section:last-of-type div{
 }
 
 
+
 @media only screen and (min-width: 780px) {
   main section:nth-of-type(3) .sectionimgcontainer{
     flex-direction: row;
@@ -648,6 +649,7 @@ footer section:last-of-type div{
 }
 
 
+
 @media only screen and (max-width: 780px) {
   footer section:nth-of-type(2) div{
     flex-direction: column;
@@ -658,7 +660,7 @@ footer section:last-of-type div{
   footer section:nth-of-type(2) h3{
     font-size: .95em;
     color: black;
-    font-family: "SFProText-medium";
+    font-family: "SFProText-medium", Arial;
     padding: .7em 0 .7em 0 !important;
     border-top: 1px solid #d2d2d7;
     width: 100%;
@@ -688,7 +690,7 @@ footer section:last-of-type div{
   #mac .option{
     width: 100%;
     padding: 3em;
-    max-width: 400px;
+    max-width: 450px;
   }
   #mac .option:first-of-type{
     border-bottom: 1px solid var(--lightgray);
@@ -697,7 +699,6 @@ footer section:last-of-type div{
     border-right: 0px solid var(--lightgray);
   }
 }
-
 
 
 

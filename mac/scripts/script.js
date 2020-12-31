@@ -10,7 +10,7 @@ for (var i = 0; i < color.length; i++) {
     else {
       changingImg = document.getElementsByClassName("changingmac")[0];
     }
-    
+
     if (this.classList.contains("color1")) {
       changingImg.src = "../images/macgray.jpg";
     }
