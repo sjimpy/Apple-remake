@@ -3,7 +3,9 @@
 
 
 ## Bronnenlijst
-1. Apple. (z.d.). Apple. Geraadpleegd op 8 november 2020, van https://www.apple.com/
+1. -bron 1-
+2. -bron 2-
+3. -...-
 
 
 
