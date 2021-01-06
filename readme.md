@@ -70,7 +70,7 @@ Samen met het groepje opgesteld
 
 | Luke      | Melvin          | Sam    | Jimmy        |
 | ---            | ---                | ---          | ---              |
-| Bij svg: Waarom is ‘stroke’ geen css eigenschap?  | nvt.  | Font die gedownload is gebruiken.    | vDe Apple website heeft vaak updates, hoe kan ik dat het beste aanpakken ?  |
+| Bij svg: Waarom is ‘stroke’ geen css eigenschap?  | nvt.  | Font die gedownload is gebruiken.    | De Apple website heeft vaak updates, hoe kan ik dat het beste aanpakken ?  |
 | Bij het drukken op een button herlaad alles ipv de js-actie te ondernemen.  |   | Hoe kan ik dit menu uit laten klappen als ik erop klik? |   |
 | Hoe klap ik een ‘uitklapmenu’ uit in animatie? |    |   Moet je al een grid gebruiken op een small screen of alleen als er een breakpoint komt?   |    |
 | Form heeft geen action. Maar weet niet wat ik moet invullen. |    |   Wat betekent de :after en de :before precies? (weet het zelf wel ongeveer)   |    |
