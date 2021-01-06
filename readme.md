@@ -3,20 +3,45 @@
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. Apple. (z.d.). Apple. Geraadpleegd op 8 november 2020, van https://www.apple.com/
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Over het algemeen ging dit vak erg goed. Sommige onderdelen bleken iets meer werk te zijn dan ik had verwacht maar alles is uiteindelijk gelukt. Toen ik klaar was heb ik nog wat extra tijd besteed aan details zoals: backup fonts, css classes, extra animaties, scroll events, SVG's, extra microinteracties, focus en hover states en ik heb de tijd genomen om de CSS netter te maken en te voorzien van comments. Ook heb ik nog wat extra tijd gestoken in een kleine easter egg die je kan activeren door snel "windows te typen"
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+**Screenshot 1:**
 
+de home pagina voor grote schermen:
+
+<img src="progresslog/final1.png" width="750px" alt="Home pagina groot">
+
+**Screenshot 2:**
+
+de home pagina voor kleine schermen:
+
+<img src="progresslog/final2.png" width="375px" alt="Home pagina klein">
+
+**Screenshot 3:**
+
+de Mac pagina voor grote schermen:
+
+<img src="progresslog/final3.png" width="750px" alt="Mac pagina groot">
+
+**Screenshot 4:**
+
+de Mac pagina voor kleine schermen:
+
+<img src="progresslog/final4.png" width="375px" alt="Mac pagina klein">
+
+**Screenshot 5:**
+
+de navigatie voor kleine schermen:
+
+<img src="progresslog/final5.png" width="375px" alt="Mobiele navigatie">
 
 
 ## Voortgang 3 (week 6)
@@ -75,25 +100,25 @@ Vorige keer heb ik de site laten zien voor mobiel. Deze spint is de mobiele vers
 
 Dit is de eerste pagina voor desktop. Zoals je ziet heb ik nog 2 elementen toegevoegd aan de onderste container. In mobile view komen deze verticaal boven elkaar te liggen.
 
-<img src="progresslog/week5img1.png" width="750px" alt="homepage small">
+<img src="progresslog/week5img1.png" width="750px" alt="homepage groot">
 
 **Screenshot 2:**
 
 De footer gemaakt voor desktop. Zoals je ziet zitten er ontzettend veel list items in de footer, Dit was best veel werk om allemaal netjes te krijgen.
 
-<img src="progresslog/week5img2.png" width="750px" alt="small nav">
+<img src="progresslog/week5img2.png" width="750px" alt="footer groot">
 
 **Screenshot 3:**
 
 Voor de mobiele versie van de footer heb ik alle lijsten laten inklappen en heb ik een + toegevoegd. Het inklappen is erg handig voor mobiel omdat het de pagina een stuk korten maakt.
 
-<img src="progresslog/week5img3.png" width="375px" alt="small nav">
+<img src="progresslog/week5img3.png" width="375px" alt="footer klein">
 
 **Screenshot 4:**
 
 Zoals je ziet is elk ingeklapt element uitklapbaar. Als je er op klikt verschijnen alle list items en draait de "+" zodat er een kruisje staat. Als je op het kruisje drukt klappen de list items weer in.
 
-<img src="progresslog/week5img4.png" width="375px" alt="small nav">
+<img src="progresslog/week5img4.png" width="375px" alt="footer uitgeklapt">
 
 ### Agenda voor meeting
 
@@ -130,13 +155,13 @@ Qua stijl heb ik geprobeerd om zo dicht mogelijk bij het design van Apple te bli
 
 De eerste pagina op klein scherm.
 
-<img src="progresslog/week3img1.png" width="375px" alt="homepage small">
+<img src="progresslog/week3img1.png" width="375px" alt="home page klein">
 
 **Screenshot 2:**
 
 De navigatie op klein scherm, Deze heb ik al animaties gegeven. Zo animeert de hamburger naar een kruis.
 
-<img src="progresslog/week3img4.png" width="375px" alt="small nav">
+<img src="progresslog/week3img4.png" width="375px" alt="nav klein">
 
 **Screenshot 3:**
 
@@ -148,7 +173,7 @@ Dit is de eerste pagina op klein scherm. Je ziet hier dat de afbeeldingen groter
 
 Dit is de eerste pagina op grotere schermen. De navigatie is nu anders.
 
-<img src="progresslog/week3img2.png" width="375px" alt="homepage bigg">
+<img src="progresslog/week3img2.png" width="375px" alt="homepage groot">
 
 ### Agenda voor meeting
 
