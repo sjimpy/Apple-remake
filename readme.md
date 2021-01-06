@@ -3,9 +3,7 @@
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. Apple. (z.d.). Apple. Geraadpleegd op 8 november 2020, van https://www.apple.com/
 
 
 
@@ -195,7 +193,7 @@ Het gesprek ging goed. Ik had niet veel vragen. Voor de viewport animaties is aa
 
 ## Breakdownschets (week 1)
 
-<img src="images/breakdown.jpg" width="375px" alt="breakdown van de homepage">
+<img src="progresslog/breakdown.jpg" width="375px" alt="breakdown van de homepage">
 
 
 
