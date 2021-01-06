@@ -1,9 +1,6 @@
 # Procesverslag
 **Auteur:** Jimmy Dekker
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-
 
 ## Bronnenlijst
 1. -bron 1-
@@ -24,8 +21,42 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
 
+Deze week heb ik de 2e pagina in elkaar gezet. Deze heb ik gelijk responsive gemaakt. Voor het eindgesprek wil ik de Macbooks nog kunnen veranderen van kleur en ga ik extra (viewport) animaties toevoegen aan beide pagina's.
+
+
+**Screenshot(s):**
+
+Omdat er niks is verandert heb ik deze week alleen mobiele en desktop screenshots van de Mac pagina.
+
+**Screenshot 1:**
+
+Dit is een screenshot van de mobiele versie van de Mac pagina. Op dit formaat staan de Macbook air opties onder elkaar. Ook heb ik de kleuren opties onder de ageeldingen gemaakt, op de site van Apple is dit gedaan met een afbeelding. Ik heb er voor gekozen om dit met css te doen. Ik heb voor het eerst gebruik gemaakt van ::after.
+
+<img src="progresslog/week6img1.png" width="375px" alt="Mac pagina klein">
+
+**Screenshot 2:**
+
+Bij de desktop versie heb ik de Macbook optie naast elkaar gezet.
+
+<img src="progresslog/week6img2.png" width="750px" alt="Mac pagina groot">
+
+
+### Agenda voor meeting
+
+Samen met het groepje opgesteld
+
+| Luke      | Melvin          | Sam    | Jimmy        |
+| ---            | ---                | ---          | ---              |
+| nvt.  | nvt.  |  Vragen over de navigatie  | nvt.  |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+### Verslag van meeting
+
+Ik was bijna vergeten dat we een meeting hadden. Gelukkig kwam precies binnen toen ik aan de beurt was. Ik heb verder geen vragen gesteld maar heb wel wat tips gekregen waar ik me op zou kunnen focussen voor een hoger cijger. Deze extra toevoegingen wil ik deze vakantie gaan toevoegen.
 
 
 ## Voortgang 2 (week 5)
@@ -137,7 +168,7 @@ Het gesprek ging goed. Ik had niet veel vragen. Voor de viewport animaties is aa
 
 ## Breakdownschets (week 1)
 
-<img src="images/breakdown.png" width="375px" alt="breakdown van de homepage">
+<img src="images/breakdown.jpg" width="375px" alt="breakdown van de homepage">
 
 
 
