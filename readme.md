@@ -44,13 +44,13 @@ Vorige keer heb ik de site laten zien voor mobiel. Deze spint is de mobiele vers
 
 Dit is de eerste pagina voor desktop. Zoals je ziet heb ik nog 2 elementen toegevoegd aan de onderste container. In mobile view komen deze verticaal boven elkaar te liggen.
 
-<img src="progresslog/week5img1.png" width="375px" alt="homepage small">
+<img src="progresslog/week5img1.png" width="750px" alt="homepage small">
 
 **Screenshot 2:**
 
 De footer gemaakt voor desktop. Zoals je ziet zitten er ontzettend veel list items in de footer, Dit was best veel werk om allemaal netjes te krijgen.
 
-<img src="progresslog/week5img2.png" width="375px" alt="small nav">
+<img src="progresslog/week5img2.png" width="750px" alt="small nav">
 
 **Screenshot 3:**
 
@@ -62,7 +62,7 @@ Voor de mobiele versie van de footer heb ik alle lijsten laten inklappen en heb 
 
 Zoals je ziet is elk ingeklapt element uitklapbaar. Als je er op klikt verschijnen alle list items en draait de "+" zodat er een kruisje staat. Als je op het kruisje drukt klappen de list items weer in.
 
-<img src="progresslog/week5img3.png" width="375px" alt="small nav">
+<img src="progresslog/week5img4.png" width="375px" alt="small nav">
 
 ### Agenda voor meeting
 
